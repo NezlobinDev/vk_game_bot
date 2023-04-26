@@ -1,0 +1,6 @@
+aiomysql
+vkbottle
+loguru
+tortoise-orm
+emoji
+django-environ
