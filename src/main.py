@@ -1,6 +1,6 @@
 from vkbottle import Bot
 from app.settings import DEBUG
-from app.settings.components import middlewares, db_models, db_url, apps
+from app.settings.components import TORTOISE_ORM, apps, middlewares
 
 from loguru import logger
 from tortoise import Tortoise, run_async
@@ -9,8 +9,7 @@ from tortoise import Tortoise, run_async
 async def init_db() -> None:
     """Инициализация базы данных"""
     await Tortoise.init(
-        db_url=db_url,
-        modules={'models': db_models},
+        config=TORTOISE_ORM,
     )
 
 

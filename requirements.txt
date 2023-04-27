@@ -4,3 +4,4 @@ loguru
 tortoise-orm
 emoji
 django-environ
+aerich

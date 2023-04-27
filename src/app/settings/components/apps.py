@@ -4,8 +4,3 @@ from users.lablers import user_labelers
 apps = [
     user_labelers,
 ]
-
-# подключаемые модели
-db_models = []
-
-# по
